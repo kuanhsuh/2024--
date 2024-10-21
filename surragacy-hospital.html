@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="style.css">
+
     </head>
     <body>
         <!-- Navbar -->
@@ -14,18 +16,44 @@
                         <div class="flex flex-shrink-0 items-center">
                             <img class="h-8 w-auto"
                                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                                alt="Your Company">
+                                alt="安昕美寶">
                         </div>
                         <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
                             <!-- Current: "border-cyan-600 text-gray-900", Default: "border-transparent text-gray-500 hover:border-cyan-600 hover:text-gray-700" -->
                             <a href="/index.html"
-                                class="inline-flex items-center border-b-4 border-transparent px-1 pt-1 text-sm font-medium text-gray-900">首頁</a>
+                                class="inline-flex items-center border-b-4 border-cyan-600 px-1 pt-1 text-sm font-medium text-gray-900">首頁</a>
                             <a href="/about.html"
                                 class="inline-flex items-center border-b-4 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-cyan-600 hover:text-gray-700">關於我們</a>
-                            <a href="/rooms.html"
-                                class="inline-flex items-center border-b-4 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-cyan-600 hover:text-gray-700">房間總覽</a>
-                            <a href="/baby-faq.html"
-                                class="inline-flex items-center border-b-4 border-cyan-600 px-1 pt-1 text-sm font-medium text-gray-500 hover:border-cyan-600 hover:text-gray-700">費用/常見問題</a>
+
+                            <div
+                                class="dropdown inline-flex items-center border-b-4 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-cyan-600 hover:text-gray-700">
+                                <button
+                                    class="dropbtn items-center border-b-2 border-transparent px-1 pt-1 font-medium  hover:border-cran-600 ">月子中心</button>
+                                <div class="dropdown-content" style="top: 50px">
+                                    <a href="./baby-single-room.html">房間</a>
+                                    <a href="./baby-process.html">赴美流程</a>
+                                    <a href="./baby-process.html">醫生/醫院介紹</a>
+                                    <a href="./baby-faq.html">常見問題</a>
+                                </div>
+                            </div>
+                            <div
+                                class="dropdown inline-flex items-center border-b-4 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-cyan-600 hover:text-gray-700">
+                                <button
+                                    class="dropbtn items-center border-b-2 border-transparent px-1 pt-1 font-medium  hover:border-cran-600 ">代孕</button>
+                                <div class="dropdown-content" style="top: 50px">
+                                    <a
+                                        href="./baby-single-room.html">代孕介紹/費用</a>
+                                    <a href="./baby-process.html">代孕流程</a>
+                                    <a href="./baby-process.html">醫生/醫院介紹</a>
+                                    <a href="./baby-faq.html">常見問題</a>
+                                </div>
+                            </div>
+                            <a href="/immigration.html"
+                                class="inline-flex items-center border-b-4 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-cyan-600 hover:text-gray-700">美國移民</a>
+                            <a href="/school.html"
+                                class="inline-flex items-center border-b-4 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-cyan-600 hover:text-gray-700">美國留學</a>
+                            <a href="/realestate.html"
+                                class="inline-flex items-center border-b-4 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-cyan-600 hover:text-gray-700">房地產投資</a>
                             <a href="/contact.html"
                                 class="inline-flex items-center border-b-4 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-cyan-600 hover:text-gray-700">聯絡我們</a>
                         </div>
@@ -44,8 +72,9 @@
                   Menu open: "hidden", Menu closed: "block"
                 -->
                             <svg class="block h-6 w-6" fill="none"
-                                viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" aria-hidden="true">
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor"
+                                aria-hidden="true">
                                 <path stroke-linecap="round"
                                     stroke-linejoin="round"
                                     d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -56,8 +85,9 @@
                   Menu open: "block", Menu closed: "hidden"
                 -->
                             <svg class="hidden h-6 w-6" fill="none"
-                                viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" aria-hidden="true">
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor"
+                                aria-hidden="true">
                                 <path stroke-linecap="round"
                                     stroke-linejoin="round"
                                     d="M6 18L18 6M6 6l12 12" />
@@ -73,12 +103,33 @@
                     <!-- Current: "bg-indigo-50 border-cyan-600 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-cyan-600 hover:text-gray-700" -->
                     <a href="/index.html"
                         class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-cyan-600 hover:bg-gray-50 hover:text-gray-700">首頁</a>
-                    <a href="/about.html"
-                        class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-cyan-600 hover:bg-gray-50 hover:text-gray-700">關於我們</a>
+                    <div class="menu-container">
+                        <button
+                            class="menu-toggle block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-cyan-600 hover:bg-gray-50 hover:text-gray-700">月子中心</button>
+                        <ul id="menu-list" class="menu-list">
+                            <li><a href="./baby-single-room.html">房間</a></li>
+                            <li><a href="./baby-process.html">赴美流程</a></li>
+                            <li><a href="./baby-process.html">醫生/醫院介紹</a></li>
+                            <li><a href="./baby-faq.html">常見問題</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-container">
+                        <button
+                            class="menu-toggle block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-cyan-600 hover:bg-gray-50 hover:text-gray-700">代孕</button>
+                        <ul id="menu-list" class="menu-list">
+                            <li><a
+                                    href="./surragacy-whatis.html">代孕介紹/費用</a></li>
+                            <li><a href="./surragacy-process.html">代孕流程</a></li>
+                            <li><a
+                                    href="./surragacy-hospital.html">醫生/醫院介紹</a></li>
+                            <li><a href="./surragacy-faq.html">常見問題</a></li>
+                        </ul>
+                    </div>
+
                     <a href="/rooms.html"
                         class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-cyan-600 hover:bg-gray-50 hover:text-gray-700">房間總覽</a>
                     <a href="/baby-faq.html"
-                        class="block border-l-4 border-cyan-600 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700">費用&常見問題</a>
+                        class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-cyan-600 hover:bg-gray-50 hover:text-gray-700">費用&常見問題</a>
                     <a href="/contact.html"
                         class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-cyan-600 hover:bg-gray-50 hover:text-gray-700">聯絡我們</a>
                 </div>
@@ -200,40 +251,50 @@
         <!-- Footer -->
         <footer class="bg-white">
             <div
-                class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
+                class="mx-auto max-w-7xl overflow-hidden px-6 py-10 lg:px-8">
                 <nav
                     class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
                     aria-label="Footer">
                     <div class="pb-6">
                         <a href="#"
-                            class="text-sm leading-6 text-gray-600 hover:text-gray-900">About</a>
+                            class="text-sm leading-6 text-gray-600 hover:text-gray-900">首頁
+                        </a>
+                    </div>
+                    <div class="pb-6">
+                        <a href="./about.html"
+                            class="text-sm leading-6 text-gray-600 hover:text-gray-900">關於我們</a>
+                    </div>
+                    <div class="pb-6">
+                        <a href="./baby-faq.html"
+                            class="text-sm leading-6 text-gray-600 hover:text-gray-900">月子中心</a>
+                    </div>
+                    <div class="pb-6">
+                        <a href="./surragacy-whatis.html"
+                            class="text-sm leading-6 text-gray-600 hover:text-gray-900">代孕</a>
+                    </div>
+                    <div class="pb-6">
+                        <a href="./immigration.html"
+                            class="text-sm leading-6 text-gray-600 hover:text-gray-900">美國移民</a>
+                    </div>
+                    <div class="pb-6">
+                        <a href="./school.html"
+                            class="text-sm leading-6 text-gray-600 hover:text-gray-900">美國留學</a>
+                    </div>
+                    <div class="pb-6">
+                        <a href="./realestate.html"
+                            class="text-sm leading-6 text-gray-600 hover:text-gray-900">房地產投資</a>
                     </div>
                     <div class="pb-6">
                         <a href="#"
-                            class="text-sm leading-6 text-gray-600 hover:text-gray-900">Blog</a>
-                    </div>
-                    <div class="pb-6">
-                        <a href="#"
-                            class="text-sm leading-6 text-gray-600 hover:text-gray-900">Jobs</a>
-                    </div>
-                    <div class="pb-6">
-                        <a href="#"
-                            class="text-sm leading-6 text-gray-600 hover:text-gray-900">Press</a>
-                    </div>
-                    <div class="pb-6">
-                        <a href="#"
-                            class="text-sm leading-6 text-gray-600 hover:text-gray-900">Accessibility</a>
-                    </div>
-                    <div class="pb-6">
-                        <a href="#"
-                            class="text-sm leading-6 text-gray-600 hover:text-gray-900">Partners</a>
+                            class="text-sm leading-6 text-gray-600 hover:text-gray-900">聯絡我們</a>
                     </div>
                 </nav>
                 <div class="mt-10 flex justify-center space-x-10">
                     <a href="#" class="text-gray-400 hover:text-gray-500">
                         <span class="sr-only">Facebook</span>
                         <svg class="h-6 w-6" fill="currentColor"
-                            viewBox="0 0 24 24" aria-hidden="true">
+                            viewBox="0 0 24 24"
+                            aria-hidden="true">
                             <path fill-rule="evenodd"
                                 d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
                                 clip-rule="evenodd" />
@@ -242,74 +303,22 @@
                     <a href="#" class="text-gray-400 hover:text-gray-500">
                         <span class="sr-only">Instagram</span>
                         <svg class="h-6 w-6" fill="currentColor"
-                            viewBox="0 0 24 24" aria-hidden="true">
+                            viewBox="0 0 24 24"
+                            aria-hidden="true">
                             <path fill-rule="evenodd"
                                 d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-gray-500">
-                        <span class="sr-only">X</span>
-                        <svg class="h-6 w-6" fill="currentColor"
-                            viewBox="0 0 24 24" aria-hidden="true">
-                            <path
-                                d="M13.6823 10.6218L20.2391 3H18.6854L12.9921 9.61788L8.44486 3H3.2002L10.0765 13.0074L3.2002 21H4.75404L10.7663 14.0113L15.5685 21H20.8131L13.6819 10.6218H13.6823ZM11.5541 13.0956L10.8574 12.0991L5.31391 4.16971H7.70053L12.1742 10.5689L12.8709 11.5655L18.6861 19.8835H16.2995L11.5541 13.096V13.0956Z" />
-                        </svg>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-gray-500">
-                        <span class="sr-only">GitHub</span>
-                        <svg class="h-6 w-6" fill="currentColor"
-                            viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-gray-500">
-                        <span class="sr-only">YouTube</span>
-                        <svg class="h-6 w-6" fill="currentColor"
-                            viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z"
                                 clip-rule="evenodd" />
                         </svg>
                     </a>
                 </div>
                 <p
                     class="mt-10 text-center text-xs leading-5 text-gray-500">&copy;
-                    2020 Your Company, Inc. All rights reserved.</p>
+                    2020
+                    Your Company, Inc. All rights reserved.</p>
             </div>
         </footer>
 
+        <script src="./script.js"></script>
+
     </body>
 </html>
-
-<!--  -->
-<!-- 好萊塢生殖中心 (Reproductive Fertility Center - Beverly Hills) 服務項目與流程介紹
-
-好萊塢生殖中心提供全面且專業的生育治療服務，致力於幫助不同需求的患者實現為人父母的夢想。以下介紹本中心的主要服務項目以及治療流程。
-
-服務項目
-試管嬰兒 (IVF) 和移植前基因篩查 (PGS) 試管嬰兒技術是一種通過體外受精幫助患者懷孕的技術。好萊塢生殖中心的IVF服務包括單一周期試管嬰兒治療，以及在胚胎移植前進行基因篩查 (PGS)，以確保胚胎的健康。此項技術特別適合有遺傳病史或希望最大化懷孕成功率的家庭。
-
-代孕服務 (Surrogacy) 對於無法自行懷孕的患者，好萊塢生殖中心提供專業的代孕服務，代孕母會協助患者承載胚胎並完成懷孕過程。在治療中，中心會對代孕母進行全面的健康和心理評估，確保她能夠順利完成孕期。代孕服務同時包含基因篩查，以保證胚胎的健康。
-
-卵子捐贈 (Egg Donation) 中心針對卵巢功能不佳或無法自行生育的女性，提供卵子捐贈服務。這些卵子來自於經過嚴格篩選的捐贈者，並經過高標準的健康和基因篩查，確保卵子的質量。卵子捐贈者會通過試管嬰兒療程將卵子捐贈給受贈家庭。
-
-卵子冷凍 (Egg Freezing) 為了讓女性能夠在未來適合的時間生育，卵子冷凍技術應運而生。這項技術可以將女性在生育最佳年齡期間的卵子冷凍保存，讓她們在需要時能夠使用這些優質卵子進行試管嬰兒或其他生育治療。
-
-基因篩查 (PGS/PGD) 移植前基因診斷 (PGD) 和基因篩查 (PGS) 服務，能在胚胎植入子宮前對胚胎進行染色體異常篩查。此技術可以檢測胚胎是否存在遺傳問題，從而提高懷孕成功率並降低流產風險。
-
-治療流程
-諮詢與檢查 治療的第一步是與中心的專家進行初次諮詢，患者需要提供詳細的醫療史和進行基本的生育檢查。針對女性，主要檢查卵巢功能 (如AMH檢測)、性激素水平以及超聲波檢查。男性則需要進行精液分析。這些檢查有助於醫生了解患者的身體狀況，並為接下來的治療制定個性化方案。
-
-治療前準備 在治療開始前，醫生會根據檢查結果調整患者的身體狀況，並且患者需要在月經周期的第二天或第三天開始使用促排卵藥物。促排卵藥物的作用是促使卵巢內的卵子成熟，這一步驟通常持續8到10天，期間需要進行多次超聲波檢查以監控卵泡的發育情況。
-
-取卵與受精 當卵泡發育到合適階段後，醫生會安排取卵手術。取卵手術在全麻下進行，醫生通過超聲波導引取出卵子。取出的卵子會立即送入實驗室，與精子進行受精。對於精子質量不佳的患者，醫生會選擇進行卵胞漿內單精子注射 (ICSI)，確保受精成功。
-
-胚胎培養與基因篩查 在卵子與精子受精後，胚胎會在實驗室內培養5至7天，直至發展成囊胚。此時，醫院會提供基因篩查 (PGS) 服務，以檢測胚胎是否存在染色體異常，確保只有最健康的胚胎被移植到子宮內。
-
-胚胎移植與妊娠測試 胚胎培養完成後，醫生會根據患者的身體狀況安排鮮胚或冷凍胚胎移植。移植手術是一個簡單且無痛的過程，通常不需要麻醉。在移植後，患者需要進行休息並按照醫生的指示服藥。大約10至14天後，患者需要進行妊娠測試，以確認是否成功懷孕。
-
-結語
-好萊塢生殖中心通過提供全面的生殖醫療服務，幫助全球患者實現為人父母的願望。無論是試管嬰兒、卵子捐贈還是代孕服務，中心的專業醫療團隊都會提供個性化的治療方案，並結合先進的基因篩查技術，確保每個家庭能夠安全順利地迎接新生命。 -->

@@ -1,0 +1,67 @@
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  min-width: 160px;
+  z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #222;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-radius: 10px;
+  border-style: hidden; /* hide standard table (collapsed) border */
+  box-shadow: 0 0 0 1px #666; /* this draws the table border  */
+}
+
+td {
+  border: 1px solid #ccc;
+}
+
+
+.menu-list {
+  display: none; /* Initially hide the menu */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list li {
+  padding: 10px 10px 10px 30px;
+  background-color: #f1f7f6;
+  border-bottom: 1px solid #ccc;
+}
+
+.menu-list li:hover {
+  background-color: #e0e0e0;
+}
+
+.menu-container button {
+  width: 100%;
+  text-align: left;
+  display: block;
+  border: none;
+  cursor: pointer;
+}
+
+
